@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-qwra
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-qwra
+    app.kubernetes.io/part-of: ci1t-43256-0041-app
+  name: devfile-sample-qwraudxl
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-qwra
+    weight: null
+status: {}

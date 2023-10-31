@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-qwra
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-43256-0041-tenant/ci1t-43256-0041-app/devfile-sample-qwra@sha256:9216635d6802a9c3fc991805f767005e99fe3076e05f11118aeaa2d2f5115ede
+        name: my-nodejs
+        resources: {}
+status: {}
