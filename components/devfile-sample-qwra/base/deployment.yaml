@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-qwra
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/stonesoup_perfscale/ci1t-43256-0041-tenant/ci1t-43256-0041-app/devfile-sample-qwra@sha256:9216635d6802a9c3fc991805f767005e99fe3076e05f11118aeaa2d2f5115ede
         name: my-nodejs
         ports:
         - containerPort: 3001
